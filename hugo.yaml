@@ -67,7 +67,7 @@ params:
     image: images/me.png
     roundImage: true
     bottomImage:
-      enable: true
+      enable: false
     button:
       enable: false
     socialLinks:
