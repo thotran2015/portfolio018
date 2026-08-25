@@ -91,6 +91,7 @@ params:
       items:
         - "Python"
         - "JavaScript"
+        - "Go"
         - "Hugo"
         - "AI/ML"
         - "Data science"
