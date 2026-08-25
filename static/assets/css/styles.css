@@ -84,6 +84,12 @@ a.nav-item:hover {
 	margin: 0 auto;
 }
 
+.project-code-link {
+	color: #dfdfdf;
+	text-decoration: underline;
+	font-style: oblique;
+}
+
 .void-background {
 	background-color: transparent; 
 }

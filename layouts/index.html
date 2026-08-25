@@ -1,0 +1,79 @@
+{{ define "main" }}
+<section id="about" class="section section-1">
+	<div class="container has-text-centered">
+		<img class="avatar" src="{{ `assets/img/welcome.png` | relURL }}" alt="Welcome">
+	</div>
+	<div class="container"><br>
+		<div class="intro">
+			{{ .Content }}
+		</div>
+	</div>
+</section>
+
+<section id="projects" class="section section-2">
+	<div class="container">
+		<div class="has-text-centered">
+			<h3 class="title is-3">Projects</h3>
+		</div>
+		<div class="columns is-multiline is-desktop">
+			{{ range (where site.RegularPages "Section" "projects").ByDate }}
+			{{ $project := . }}
+			<div class="column is-one-quarter-desktop">
+				<div class="box">
+					<article>
+						{{ with .Params.period }}
+						<div>
+							<p>{{ . }}</p>
+						</div>
+						{{ end }}
+						{{ with .Params.image }}
+						<div>
+							<figure class="image project-figure">
+								<img src="{{ strings.TrimPrefix `/` . | relURL }}" alt="{{ $project.Title }}">
+							</figure>
+						</div>
+						{{ end }}
+						<div>
+							<p>
+								{{ if .Params.demo }}
+								<a href="{{ .Params.demo }}" target="_blank" rel="noopener">{{ $project.Title }}</a>
+								{{ else }}
+								<a href="{{ $project.RelPermalink }}">{{ $project.Title }}</a>
+								{{ end }}
+								<br>
+								{{ if .Params.github }}
+								<a class="project-code-link" href="{{ .Params.github }}" target="_blank" rel="noopener">Description/Code</a>
+								{{ else if and .Params.code_label .Params.demo }}
+								<a class="project-code-link" href="{{ .Params.demo }}" target="_blank" rel="noopener">{{ .Params.code_label }}</a>
+								{{ else }}
+								<a class="project-code-link" href="{{ $project.RelPermalink }}">Description</a>
+								{{ end }}
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<section id="social" class="section section-3">
+	<div class="container">
+		<div class="has-text-centered">
+			<h3 class="title is-3">Let's Socialize</h3>
+		</div>
+		<div class="social-container columns">
+			<div class="column is-4 has-text-centered">
+				<a target="_blank" rel="noopener" href="{{ site.Params.linkedin }}"><img src="{{ `assets/img/linkedin.png` | relURL }}" alt="LinkedIn"></a>
+			</div>
+			<div class="column is-4 has-text-centered">
+				<a target="_blank" rel="noopener" href="{{ site.Params.twitter }}"><img src="{{ `assets/img/twitter.png` | relURL }}" alt="Twitter"></a>
+			</div>
+			<div class="column is-4 has-text-centered">
+				<a target="_blank" rel="noopener" href="{{ site.Params.instagram }}"><img src="{{ `assets/img/insta.png` | relURL }}" alt="Instagram"></a>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}

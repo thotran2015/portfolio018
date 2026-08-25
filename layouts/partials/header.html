@@ -1,0 +1,37 @@
+<nav class="nav container void-background">
+	<div class="nav-left">
+		<a href="{{ site.Params.medium }}" class="nav-item" target="_blank" rel="noopener">
+			<span class="icon">
+				<i class="fa fa-medium"></i>
+			</span>
+		</a>
+		<a href="{{ site.Params.github }}" class="nav-item" target="_blank" rel="noopener">
+			<span class="icon">
+				<i class="fa fa-github"></i>
+			</span>
+		</a>
+		<a href="{{ site.Params.codepen }}" class="nav-item" target="_blank" rel="noopener">
+			<span class="icon">
+				<i class="fa fa-codepen"></i>
+			</span>
+		</a>
+	</div>
+
+	<div class="nav-right nav-menu">
+		{{ if .IsHome }}
+		<a class="nav-item" href="#about">About</a>
+		<a class="nav-item" href="#projects">Projects</a>
+		<a class="nav-item" href="#social">Social</a>
+		{{ else }}
+		<a class="nav-item" href="{{ `/` | relURL }}#about">About</a>
+		<a class="nav-item" href="{{ `/` | relURL }}#projects">Projects</a>
+		<a class="nav-item" href="{{ `/` | relURL }}#social">Social</a>
+		{{ end }}
+	</div>
+
+	<span class="nav-toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+	</span>
+</nav>
