@@ -1,6 +1,6 @@
 # portfolio018
 
-Personal portfolio site built with [Hugo](https://gohugo.io/).
+Personal portfolio and blog built with [Hugo](https://gohugo.io/) and the [Hugo Profile](https://github.com/gurusabarish/hugo-profile) theme.
 
 ## Local preview
 
@@ -10,19 +10,19 @@ hugo server
 
 Open the URL Hugo prints (usually `http://localhost:1313/portfolio018/`).
 
-## Add a project
+## Customize
+
+- Site content (about, hero, projects): edit [`hugo.yaml`](hugo.yaml)
+- Blog posts: `content/blogs/`
 
 ```bash
-hugo new content projects/my-project.md
+hugo new content blogs/my-post.md
 ```
-
-Edit the front matter (`title`, `period`, `github`, `demo`, `image`) and writeup, then rebuild.
 
 ## GitHub Pages
 
-This site is built with Hugo in GitHub Actions (not Jekyll). After the first workflow run:
+Built with Hugo in GitHub Actions (theme loaded as a git submodule). After the first workflow run:
 
-1. Open the repo on GitHub → **Settings** → **Pages**
-2. Set **Source** to **GitHub Actions** (not “Deploy from a branch”)
+1. Repo **Settings → Pages → Source → GitHub Actions**
 
-The site publishes at `https://thotran2015.github.io/portfolio018/`.
+Published at `https://thotran2015.github.io/portfolio018/`.

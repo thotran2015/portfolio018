@@ -1,0 +1,222 @@
+baseURL: "https://thotran2015.github.io/portfolio018/"
+locale: "en-us"
+title: "Tho Tran"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 5
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog
+      url: /blogs
+      weight: 1
+
+params:
+  title: "Tho Tran"
+  description: "Portfolio and blog: data visualization, AI/ML, and building things for the web."
+  favicon: "fav.png"
+
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    defaultTheme: "light"
+
+  navbar:
+    align: ms-auto
+    brandName: "Tho Tran"
+    disableSearch: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: true
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Tho."
+    subtitle: "I build things for the web"
+    content: "I earned my SB and MEng in Electrical Engineering and Computer Science (EECS) at MIT. I'm interested in data visualization, AI/ML, and data science, and this is my corner of the internet for projects and writing."
+    image: images/me.png
+    roundImage: true
+    bottomImage:
+      enable: true
+    button:
+      enable: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/thotran2015
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/thotran7/
+        - icon: fab fa-medium
+          url: https://medium.com/@thotran2015
+        - icon: fab fa-instagram
+          url: https://www.instagram.com/tho_tran2018/
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "images/me.png"
+    content: |-
+      My name is Tho (sounds like Theo but without the 'e'). I earned my SB and MEng in Electrical Engineering and Computer Science (EECS) at MIT.
+
+      I care about data visualization, AI/ML, and practical tools people can use. You'll find project writeups here, plus a blog for longer notes.
+    skills:
+      enable: true
+      title: "Technologies I've been working with:"
+      items:
+        - "Python"
+        - "JavaScript"
+        - "Hugo"
+        - "Data visualization"
+        - "Machine learning"
+
+  experience:
+    enable: false
+
+  education:
+    enable: true
+    items:
+      - title: "Master of Engineering (MEng) in Electrical Engineering and Computer Science"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: "https://www.mit.edu"
+        date: "2019 - 2021"
+        content: |-
+          Focus areas include data visualization, AI/ML, and data science.
+      - title: "Bachelor of Science (SB) in Electrical Engineering and Computer Science"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: "https://www.mit.edu"
+        content: |-
+          Focus areas include data visualization, AI/ML, and data science.
+
+  achievements:
+    enable: false
+
+  projects:
+    enable: true
+    items:
+      - title: Chef Whisper
+        content: Extract recipes from any cooking website. Paste a link and get ingredients and method: no ads, no life story, no pop-ups.
+        image: images/projects/chefwhisper.png
+        featured:
+          name: Visit site
+          link: https://chefwhisper.org
+        badges:
+          - "Web"
+          - "Recipes"
+          - "Voice"
+        links:
+          - icon: fas fa-globe
+            url: https://chefwhisper.org
+
+      - title: "6.163: Imaging Flash Cotton"
+        content: Strobe imaging project for MIT 6.163, capturing flash cotton with high-speed techniques.
+        image: images/projects/flash.png
+        featured:
+          name: Video
+          link: https://www.dropbox.com/s/9f3dhwpl4odrx8a/6.163%20Final%20Video%20%E2%80%93%20Imaging%20Flash%20Cotton%20%28Strobe%203%29.mp4?dl=0
+        badges:
+          - "Imaging"
+          - "MIT 6.163"
+        links:
+          - icon: fas fa-file-alt
+            url: https://gist.githubusercontent.com/thotran2015/c558af603e1408b2eb65694ef7181687/raw/a82df5ae6033a458070d85134847c229e23bf57d/Flash-Cotton.txt
+
+      - title: "MOOCs: Online Class Culture"
+        content: Exploration of online class culture in MOOCs.
+        image: images/projects/school.png
+        featured:
+          name: Demo
+          link: https://thotran2015.github.io/LMT_MOOCs/
+        badges:
+          - "Education"
+          - "Data"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/thotran2015/LMT_MOOCs
+
+      - title: Strobe Lab
+        content: Strobe Lab project site and related code.
+        image: images/projects/photography.png
+        featured:
+          name: Demo
+          link: https://thotran2015.github.io/strobelab/
+        badges:
+          - "Photography"
+          - "Lab"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/thotran2015/strobelab
+
+  contact:
+    enable: true
+    content: My inbox is open, whether you have a question or just want to say hi.
+    btnName: LinkedIn
+    btnLink: https://www.linkedin.com/in/thotran7/
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/thotran2015
+      linkedin: https://www.linkedin.com/in/thotran7/
+      twitter: https://twitter.com/thotran2019
+      instagram: https://www.instagram.com/tho_tran2018/
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
