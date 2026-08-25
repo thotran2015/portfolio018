@@ -32,7 +32,7 @@ Menus:
 
 params:
   title: "Tho Tran"
-  description: "Portfolio and blog: data visualization, AI/ML, and building things for the web."
+  description: "Portfolio and blog: AI/ML, data science, system design, and building things."
   favicon: "fav.png"
 
   useBootstrapCDN: false
@@ -62,8 +62,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Tho."
-    subtitle: "I build things for the web"
-    content: "I earned my SB and MEng in Electrical Engineering and Computer Science (EECS) at MIT. I'm interested in data visualization, AI/ML, and data science, and this is my corner of the internet for projects and writing."
+    subtitle: "I like to build things."
+    content: "I earned my SB and MEng in Electrical Engineering and Computer Science (EECS) at MIT. I'm interested in AI/ML, data science, system design and architecture, and this is my corner of the internet for projects and writing."
     image: images/me.png
     roundImage: true
     bottomImage:
@@ -76,19 +76,15 @@ params:
           url: https://github.com/thotran2015
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/thotran7/
-        - icon: fab fa-medium
-          url: https://medium.com/@thotran2015
-        - icon: fab fa-instagram
-          url: https://www.instagram.com/tho_tran2018/
 
   about:
     enable: true
     title: "About Me"
     image: "images/me.png"
     content: |-
-      My name is Tho (sounds like Theo but without the 'e'). I earned my SB and MEng in Electrical Engineering and Computer Science (EECS) at MIT.
+      I like to build things.
 
-      I care about data visualization, AI/ML, and practical tools people can use. You'll find project writeups here, plus a blog for longer notes.
+      I earned my SB and MEng in Electrical Engineering and Computer Science (EECS) at MIT. I'm interested in AI/ML, data science, system design and architecture, and this is my corner of the internet for projects and writing.
     skills:
       enable: true
       title: "Technologies I've been working with:"
@@ -96,8 +92,9 @@ params:
         - "Python"
         - "JavaScript"
         - "Hugo"
-        - "Data visualization"
-        - "Machine learning"
+        - "AI/ML"
+        - "Data science"
+        - "System design"
 
   experience:
     enable: false
@@ -111,13 +108,13 @@ params:
           url: "https://www.mit.edu"
         date: "2019 - 2021"
         content: |-
-          Focus areas include data visualization, AI/ML, and data science.
+          Focus areas include AI/ML, data science, system design and architecture.
       - title: "Bachelor of Science (SB) in Electrical Engineering and Computer Science"
         school:
           name: "Massachusetts Institute of Technology"
           url: "https://www.mit.edu"
         content: |-
-          Focus areas include data visualization, AI/ML, and data science.
+          Focus areas include AI/ML, data science, system design and architecture.
 
   achievements:
     enable: false
@@ -194,8 +191,6 @@ params:
     socialNetworks:
       github: https://github.com/thotran2015
       linkedin: https://www.linkedin.com/in/thotran7/
-      twitter: https://twitter.com/thotran2019
-      instagram: https://www.instagram.com/tho_tran2018/
 
   listPages:
     disableFeaturedImage: false
