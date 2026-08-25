@@ -107,13 +107,14 @@ params:
         school:
           name: "Massachusetts Institute of Technology"
           url: "https://www.mit.edu"
-        date: "2019 - 2021"
+        date: "2020 - 2021"
         content: |-
           Focus areas include AI/ML, data science, system design and architecture.
       - title: "Bachelor of Science (SB) in Electrical Engineering and Computer Science"
         school:
           name: "Massachusetts Institute of Technology"
           url: "https://www.mit.edu"
+        date: "2015 - 2019"
         content: |-
           Focus areas include AI/ML, data science, system design and architecture.
 
