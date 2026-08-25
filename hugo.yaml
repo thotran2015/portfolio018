@@ -126,7 +126,7 @@ params:
     enable: true
     items:
       - title: Chef Whisper
-        content: Extract recipes from any cooking website. Paste a link and get ingredients and method: no ads, no life story, no pop-ups.
+        content: "Extract recipes from any cooking website. Paste a link and get ingredients and method: no ads, no life story, no pop-ups."
         image: images/projects/chefwhisper.png
         featured:
           name: Visit site
