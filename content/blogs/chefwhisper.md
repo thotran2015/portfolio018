@@ -7,7 +7,7 @@ tags:
   - projects
   - cooking
   - web
-image: images/projects/chefwhisper.png
+image: images/projects/chefwhisper-6dbcc2ff.png
 description: "Paste a recipe URL, get clean ingredients and method: no ads, no life story."
 ---
 
