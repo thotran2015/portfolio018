@@ -103,7 +103,7 @@ params:
   education:
     enable: true
     items:
-      - title: "Master of Engineering (MEng) in Electrical Engineering and Computer Science"
+      - title: "Master of Engineering (MEng) in Artificial Intelligence"
         school:
           name: "Massachusetts Institute of Technology"
           url: "https://www.mit.edu"
